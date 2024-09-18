@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Vendedor</title>
-    <link rel="stylesheet" href="{{url('Css/cadastroVendedor.css')}}">
+    <title>Cadastrar Produto</title>
+    <link rel="stylesheet" href="{{url('Css/cadastroProduto.css')}}">
 </head>
 <body>
 
-    <form action="/criar_vendedor" method="post">
+    <form action="/criar_produto" method="post">
     @csrf
         <div class="container">
             <div class="container-tudo">
@@ -19,13 +19,13 @@
                 </div>
 
                 <div class="container_grp">
-                    <label for="matricula" id="label_matricula">Matrícula: </label>
-                    <input type="text" name="matricula" class="input-matricula" required>
+                    <label for="descricao" id="label_descricao">Descrição: </label>
+                    <input type="text" name="descricao" class="input-descricao" required>
                 </div>
 
                 <div class="container_grp">
-                    <label for="comissao" id="label_comissao">Comissão: </label>
-                    <input type="number" name="comissao" class="input-comissao" required>
+                    <label for="preco" id="label_preco">Preço: </label>
+                    <input type="number" name="preco" class="input-preco" required>
                 </div>
 
                 <div class="container_button">
